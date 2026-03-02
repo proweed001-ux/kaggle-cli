@@ -29,13 +29,30 @@ Additional installation instructions can be found [here](docs/README.md#installa
 
 ## Quick start
 
-Explore the available commands by running:
+If you are starting from zero, follow these steps:
+
+1. Create a Kaggle account at [kaggle.com](https://www.kaggle.com/account/login).
+2. Install the CLI:
+
+```sh
+pip install kaggle
+```
+
+3. Open [Kaggle Settings](https://www.kaggle.com/settings), then click **Generate New Token** in the **API** section.
+4. In your terminal, set the token from that page:
+
+```sh
+export KAGGLE_API_TOKEN=<your-kaggle-api-token>
+```
+
+5. Verify everything works:
 
 ```sh
 kaggle --help
+kaggle competitions list
 ```
 
-See the [User documentation](docs/README.md) for more examples & tutorials.
+If you get an authentication error, check the full [authentication guide](docs/README.md#authentication). For more examples, see the [User documentation](docs/README.md).
 
 ## Development
 
